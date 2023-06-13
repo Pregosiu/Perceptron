@@ -27,29 +27,7 @@ public class Main {
             System.out.println("1 - wyjdz");
             stop1 = Integer.parseInt(scanner.nextLine());
         }
-//        for (String s : testsetlist) {
-//            listalong.add(Klasyfikator.klasyfikuj(trainset.returnTrainset(trainsetpath), trainset.returnTestset(s), ki).values());
-//
-//        }
-//        List<Double> cc = listalong.stream()
-//                .map(x-> x.stream()
-//                        .mapToDouble(Long::doubleValue)
-//                        .sum())
-//                .collect(Collectors.toList());
-//        for (Double aDouble : cc) {
-//            wszystkiekwiaty = wszystkiekwiaty + aDouble;
-//        }
-//        List<Double> xx = listalong.stream()
-//                .map(x-> x.stream()
-//                        .sorted(Comparator.reverseOrder())
-//                        .mapToDouble(Long::doubleValue)
-//                        .limit(1)
-//                        .sum())
-//                .collect(Collectors.toList());
-//        for (int i = 0; i < cc.size(); i++) {
-//            dobrzeprzypisanekwiaty = dobrzeprzypisanekwiaty + xx.get(i);
-//        }
-//        System.out.println("dokladnosc = " + dobrzeprzypisanekwiaty/wszystkiekwiaty*100+"%");
+        
         AbstractMap.SimpleImmutableEntry<ArrayList<Double>, Double> perceptron = klasyfikator.stworzPerceptron(trainset.returnTrainset(trainsetpath), alfa);
         Integer dok = 0;
         Integer size = 0;
